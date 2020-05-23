@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
-	/*Integer intValue = 5;
+	Integer intValue = 5;
 	Double doubleValue = convertToDouble(intValue);
 
 	public Double convertToDouble(Object object) {
@@ -17,9 +17,9 @@ public class DemoApplication {
 		}
 
 		return value;
-	}*/
+	}
 
-	Integer intValue = 5;
+	/*Integer intValue = 5;
 	Double doubleValue = convertToDouble(intValue);
 
 	public Double convertToDouble(Object object) {
@@ -31,7 +31,7 @@ public class DemoApplication {
 		}
 
 		return value;
-	}
+	}*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
