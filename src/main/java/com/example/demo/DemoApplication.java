@@ -5,8 +5,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
-	int dinamismo;
-	int julio = dinamismo;
+	Integer intValue = 5;
+	Double doubleValue = convertToDouble(intValue);
+
+	public Double convertToDouble(Object object) {
+		Double value = 0.0;
+
+		if(object instanceof Integer) {
+			value = (Double) object;  // ClassCastException
+		}
+
+		return value;
+	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
